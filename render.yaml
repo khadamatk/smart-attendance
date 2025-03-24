@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: smart-attendance
+    runtime: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: credentials.json
